@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:getpayin/Components/Nav_Item.dart';
 import 'package:getpayin/Pages/Home.dart';
 import 'package:getpayin/Pages/Profile.dart';
@@ -14,6 +13,7 @@ class MyApp extends StatefulWidget {
   const MyApp({super.key, this.index = 0});
 
   @override
+  // ignore: no_logic_in_create_state
   State<MyApp> createState() => _MyAppState(index: index);
 }
 

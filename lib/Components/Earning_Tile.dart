@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 
 class Earning extends StatelessWidget {
@@ -31,7 +29,7 @@ class Earning extends StatelessWidget {
             width: 30,
             alignment: Alignment.center,
             decoration: BoxDecoration(
-                color: Color.fromARGB(255, 231, 230, 230),
+                color: const Color.fromARGB(255, 231, 230, 230),
                 borderRadius: BorderRadius.circular(30)),
             child: Text(title.characters.first.toUpperCase(),
                 style:

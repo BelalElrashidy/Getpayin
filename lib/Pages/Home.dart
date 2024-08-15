@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:getpayin/Components/Earning_Tile.dart';
 import 'package:getpayin/Components/Transaction_Tile.dart';
 import 'package:getpayin/main.dart';
@@ -110,7 +109,7 @@ class Home extends StatelessWidget {
             height: 20,
           ),
           Container(
-            margin: EdgeInsets.only(right: 16),
+            margin: const EdgeInsets.only(right: 16),
             padding: const EdgeInsets.all(16),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(16),
@@ -168,7 +167,7 @@ class Home extends StatelessWidget {
           ),
           const SizedBox(height: 16),
           Container(
-            margin: EdgeInsets.only(right: 16),
+            margin: const EdgeInsets.only(right: 16),
             padding: const EdgeInsets.symmetric(horizontal: 26, vertical: 16),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(16),

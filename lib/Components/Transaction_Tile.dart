@@ -1,5 +1,4 @@
 import "package:flutter/material.dart";
-import "package:flutter_svg/flutter_svg.dart";
 
 class Transaction extends StatelessWidget {
   final String title;
@@ -26,7 +25,7 @@ class Transaction extends StatelessWidget {
         leading: Container(
           width: 40,
           height: 40,
-          padding: EdgeInsets.all(8),
+          padding: const EdgeInsets.all(8),
           decoration: BoxDecoration(
             color: color,
             borderRadius: BorderRadius.circular(25),
@@ -35,7 +34,7 @@ class Transaction extends StatelessWidget {
         ),
         title: Text(
           title,
-          style: TextStyle(fontWeight: FontWeight.bold),
+          style: const TextStyle(fontWeight: FontWeight.bold),
         ),
         subtitle: Text(
           type,
