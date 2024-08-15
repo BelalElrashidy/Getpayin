@@ -282,9 +282,29 @@ class Home extends StatelessWidget {
                 }),
           ),
           const SizedBox(height: 16),
-          const Text('Transactions',
-              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              const Text('Transactions',
+                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+              GestureDetector(
+                  onTap: () => Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const MyApp(
+                                  index: 1,
+                                )),
+                      ),
+                  child: const Text(
+                    'See All',
+                    style: TextStyle(
+                      color: Colors.blue,
+                    ),
+                  )),
+            ],
+          ),
           const SizedBox(height: 8),
+          Text('Today', style: TextStyle(color: Colors.grey.shade600)),
           Padding(
             padding: const EdgeInsets.only(right: 16),
             child: ListView.builder(
